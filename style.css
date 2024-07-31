@@ -1,4 +1,304 @@
 html {
   height: 100%;
   width: 100%;
+  background: radial-gradient(circle, #d2ffcc, #b6f7ba);
+  padding: 20px
+}
+
+.flexbox {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  padding: 40px;
+  box-sizing: border-box;
+  
+}
+.aboutbox {
+  display:flex;
+  flex-wrap: wrap;
+  flex: 1 1 30%;
+  margin: 30px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: left;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px;
+    list-style: none;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+.navbar a:hover {
+    background-color: #abd581;
+    border-radius: 4px;
+}
+
+.header-container {
+  display: flex;
+; 
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+   background-image: url('https://www.pngkey.com/png/full/1-14330_money-png-falling-money-falling-transparent-background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; 
+  }
+
+.header-item:nth-of-type(1) {
+  flex: 10px; 
+  font-size: 50px;
+  text-align: center;
+  text-shadow:
+    -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff, 
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;; 
+}
+
+.header-item:nth-of-type(2) {
+  flex: 10px;
+  font-size: 40px; 
+  text-shadow: 
+  -1px -1px 0 #ffffff,
+   1px -1px 0 #ffffff, 
+  -1px  1px 0 #ffffff,
+   1px  1px 0 #ffffff;
+  color: black
+}
+
+.header {
+ text-align: center; 
+font-style: italic;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+color: darkgreen;
+}
+
+.header-button {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #1c5e17;  
+    border: none;
+    border-radius: 5px;
+
+  }
+
+  .header-button:hover {
+    background-color:#abd581;
+    color: black;
+}
+section {
+  
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+.box {
+   border: 5px solid #f382b8;
+    background-color:aliceblue;
+  flex: 1 1 30%;
+  margin: 10px;
+  padding: 20px;
+}
+.flex-container{
+  display: flex;
+  flex: 1;
+  border: 2px solid #333;
+  padding: 20px;
+  justify-content: center;
+  background-color: #f2f2f2;
+  flex-wrap: wrap;
+}
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 400; 
+  }
+.parent{
+padding: 40px  
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.petition-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.petition-text {
+  padding: 5px;
+}
+
+form {
+  font-family: 'Pacifico', cursive;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#theme-button {
+border: 3px dotted green;
+}
+button {
+  font-family: 'Pacifico', cursive;
+  padding: 10px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border-width: 10px;
+}
+button:hover {
+  background-color: #218838;
+}
+#resources {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.resource {
+  margin-bottom: 20px;
+}
+
+.resource h3 {
+  margin-top: 0;
+}
+
+.resource p {
+  margin: 5px 0 15px;
+}
+
+.resource a {
+  text-decoration: none;
+  color: seagreen;
+}
+
+.resource a:hover {
+  text-decoration: underline;
+}
+#contact {
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 2;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact h3 {
+  margin-top: 0;
+}
+
+.contact p {
+  margin: 5px 0 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+#petition {
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  flex: 2;
+}
+
+.petition {
+  margin-bottom: 20px;
+}
+
+.petition {
+  margin-top: 0;
+}
+
+.petition {
+  margin: 5px 0 15px;
+}
+
+.petition {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.petition {
+  text-decoration: underline;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.dark-mode {
+background-color: black;
+color: lime;
+
+}
+.data {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+
 }

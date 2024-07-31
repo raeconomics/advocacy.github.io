@@ -8,11 +8,148 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="reset-webview.css" rel="stylesheet" type="text/css" />
 </head>
-  <title>Chasing the Bag: Understanding and Solving the Racial and Gender Gap in Growth Equity</title>
-<h1>Chasing the Bag: Understanding and Solving the Racial and Gender Gap in Growth Equity</h1>
-  <h3> </h3>
+
 <body>
-  Hello world
+  <nav class="navbar">
+    <div class="nav-item">
+      <li><a href="#about">About Us</a></li>
+    </div>
+    <div class="nav-item">
+      <li><a href="#data">Data</a></li>
+    </div>
+    <div class="nav-item">
+      <li><a href="#resources">Resources</a></li>
+    </div>
+    <div class="nav-item">
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </div>
+  </nav>
+  <header class="header-container">
+    <div class="header-item">Chasing the Bag</div>
+    <div class="header-item">Understanding and Solving the Racial and Gender Gap in Growth Equity</div>
+  </header>
+  <section>
+  <h1>Chasing the Bag</h1>
+  <img id="bg" src="https://th.bing.com/th/id/OIP.HGrhyvmX_McDgWDRy8NlQAHaE7?rs=1&pid=ImgDetMain" alt="background">
+  <img id="coins" src="https://th.bing.com/th/id/OIP.oYSL6xwCuLVRnlqhj3G3vQHaGR?rs=1&pid=ImgDetMain" alt="coins">
+  <img id="cash" src="https://www.pngkey.com/png/full/1-14330_money-png-falling-money-falling-transparent-background.png" alt="cash">
+  <img id="girl" src="girl.png" alt="girl">
+  </section>
+  <h3> This platform aims to shed light on the significant disparities in the amount of funding received by minority
+    entrereneurs, providing insights and data to foster understanding and drive change.</h3>
+  <div class="flexbox">
+    <div class="button-item">
+      <button class="header-button">Contact Us</button>
+    </div>
+    <div class="button-item">
+      <button class="header-button">Learn More</button>
+    </div>
+  </div>
+  <div id="about">
+    <h2>About Us</h2>
+    <div class="aboutbox">
+      <div style="display: flex;">
+        <p class="about-text">Welcome to our website, where our mission is to bridge the racial gap in private market
+          funding and foster an inclusive entrepreneurial ecosystem. We believe that diversity is a catalyst for
+          innovation, and we are committed to
+          leveling the playing field for minority entrepreneurs who have historically been marginalized.</p>
+
+
+        <p class="about-text"><img
+            src="https://www.essence.com/wp-content/uploads/2019/12/EQ4A0745-1920x1080.jpg?width=1920&height=1080"
+            width=400>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="data">
+    <h2>Data</h2>
+    <div class="flex-container">
+      <div class="box"> The racial disparity in private market funding is stark. Despite representing a significant
+        portion of the population, Black and Latinx entrepreneurs receive a disproportionately small share of venture
+        capital and private equity investments.</div>
+      <div class="box" style="padding:5px">
+        <div class="parent">
+          According to a 2020 report by the Harvard Business School, Black entrepreneurs received only 1% of venture
+          capital funding, while Latinx entrepreneurs received just 1.8%. In contrast, white entrepreneurs secured 77%
+          of
+          the funding.</div>
+      </div>
+      <div class="box">
+        <div class="flex-item">
+          This disparity is further reflected in the broader landscape of startup investments. The 2021 Diversity in
+          Startups report by RateMyInvestor and Diversity VC found that only 2.4% of venture capital dollars went to
+          Black-founded startups, and Latinx founders received 1.7% of the funding. These figures illustrate a
+          persistent
+          inequity that stifles innovation and economic growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="resources">
+    <h2>Resources for Black Founders and Entrepreneurs</h2>
+
+    <div class="resource">
+      <h3><a href="http://blackfounders.com/" target="_blank">Black Founders</a></h3>
+      <p>Black Founders is dedicated to increasing the number of successful black entrepreneurs in technology. They
+        provide networking opportunities, educational programs, and events to support black tech entrepreneurs at
+        various stages of their careers.</p>
+    </div>
+
+    <div class="resource">
+      <h3><a href="https://www.blacksintechnology.net/" target="_blank">Blacks In Technology (BIT) Foundation</a>
+      </h3>
+      <p>Blacks In Technology (BIT) is a global platform for Black people in technology. They offer mentorship,
+        networking, and resources such as webinars, conferences, and a community forum to support Black
+        professionals and entrepreneurs in the tech industry.</p>
+    </div>
+
+    <div class="resource">
+      <h3><a href="https://backstagecapital.com/" target="_blank">Backstage Capital</a></h3>
+      <p>Backstage Capital is a venture capital fund that invests in underrepresented founders, including Black
+        entrepreneurs. They provide funding, resources, and support to help diverse startups succeed. Their mission
+        is to change the face of entrepreneurship by providing opportunities for underrepresented groups.</p>
+    <img src="https://th.bing.com/th/id/OIP.zLTXkmCsoqLnw-gM-UN7QwHaDw?rs=1&pid=ImgDetMain" width=400></div>
+  </section>
+  <div id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with our team.</p>
+  </div>
+
+  <div id="petition">
+    <div class="petition-container">
+      <h2 class="petition-text">Sign the Petition 📢 </h2>
+      <div style="display: flex;">
+        <p class="petition-text"> Join us in advocating for equitable access to private funding! By signing our
+          petition,
+          you can help ensure that everyone, regardless of background, has the opportunity to access the resources they
+          need to thrive. Visit our website today and add your voice to the movement for fairness and equality in
+          funding.
+          Together, we can make a difference!</p>
+      </div>
+  <div>
+    <h2>Signatures</h2>
+      <div id="resultDiv"></div>
+  </div>
+
+
+    </div>
+
+
+  </div>
+  <form id="petitionForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" required>
+    <br>
+    <label for="message"> Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit" value="notblank">Sign Petition</button>
+  </form>
   <script src="script.js"></script>
 </body>
 
